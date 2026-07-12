@@ -1,16 +1,10 @@
 {
-  "short_name": "ElectroBox",
-  "name": "My school",
-  "icons": [
-    {
-      "src": "https://cdn-icons-png.flaticon.com/512/2942/2942502.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
+  "short_name": "Archivio1A",
+  "name": "Archivio Digitale Programmi 1A",
+  "icons": [],
   "start_url": "index.html",
-  "background_color": "#1e293b",
-  "theme_color": "#1e293b",
+  "background_color": "#2c3e50",
+  "theme_color": "#2c3e50",
   "display": "standalone",
   "orientation": "portrait"
 }
