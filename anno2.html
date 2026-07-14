@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Archivio Scolastico - 2° Anno</title>
+    
+    <link rel="manifest" href="./manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#2c3e50">
+
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #ecf0f1; color: #333; margin: 0; padding: 20px; text-align: center; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .back-btn { background-color: #7f8c8d; color: white; border: none; padding: 10px 20px; font-size: 14px; font-weight: bold; border-radius: 6px; text-decoration: none; display: inline-block; margin-bottom: 20px; float: left; transition: background 0.3s; }
+        .back-btn:hover { background-color: #95a5a6; }
+        .clearfix { clear: both; }
+        h1 { color: #2c3e50; margin-top: 10px; margin-bottom: 5px; font-size: 24px; }
+        .subtitle { color: #7f8c8d; font-size: 16px; margin-bottom: 30px; }
+        
+        .subject-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .subject-card { background: #f8f9fa; border-left: 5px solid #3498db; padding: 20px; border-radius: 6px; text-align: left; transition: all 0.3s ease; }
+        .subject-card:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        
+        /* Colori personalizzati per i profili di materia */
+        .scienze { border-left-color: #27ae60; }
+        .tecniche { border-left-color: #e67e22; }
+        .lettere { border-left-color: #9b59b6; }
+        
+        .subject-title { font-size: 18px; font-weight: bold; color: #2c3e50; margin: 0 0 12px 0; }
+        .view-btn { display: inline-block; background-color: #3498db; color: white; text-decoration: none; padding: 8px 16px; font-size: 14px; font-weight: bold; border-radius: 4px; transition: background 0.2s; }
+        .view-btn:hover { background-color: #2980b9; }
+        .scienze .view-btn { background-color: #27ae60; }
+        .scienze .view-btn:hover { background-color: #219a52; }
+        .tecniche .view-btn { background-color: #e67e22; }
+        .tecniche .view-btn:hover { background-color: #d35400; }
+        .lettere .view-btn { background-color: #9b59b6; }
+        .lettere .view-btn:hover { background-color: #8e44ad; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="index.html" class="back-btn">⬅ Torna alla Home</a>
+    <div class="clearfix"></div>
+    
+    <h1>🚀 Programmi Svolti - 2° Anno</h1>
+    <p class="subtitle">Seleziona una materia per accedere agli argomenti e alle tabelle d'esame.</p>
+    
+    <div class="subject-grid">
+        <div class="subject-card lettere">
+            <div class="subject-title">🇮🇹 Italiano</div>
+            <a href="ita_2.html" class="view-btn">Apri Programma</a>
+        </div>
+
+        <div class="subject-card lettere">
+            <div class="subject-title">📜 Storia</div>
+            <a href="storia_2.html" class="view-btn">Apri Programma</a>
+        </div>
+
+        <div class="subject-card">
+            <div class="subject-title">📐 Matematica</div>
+            <a href="matematica_2.html" class="view-btn">Apri Programma</a>
+        </div>
+
+        <div class="subject-card">
+            <div class="subject-title">🇬🇧 Lingua Inglese</div>
+            <a href="inglese_2.html" class="view-btn">Apri Programma</a>
+        </div>
+
+        <div class="subject-card scienze">
+            <div class="subject-title">🧪 Chimica</div>
+            <a href="chimica_2.html" class="view-btn">Apri Programma</a>
+        </div>
+
+        <div class="subject-card scienze">
+            <div class="subject-title">🧬 Biologia</div>
+            <a href="biologia_2.html" class="view-btn">Apri Programma</a>
+        </div>
+
+        <div class="subject-card tecniche">
+            <div class="subject-title">💻 Scienze e Tecnologie Applicate</div>
+            <a href="sta_2.html" class="view-btn">Apri Programma</a>
+        </div>
+
+        <div class="subject-card tecniche">
+            <div class="subject-title">✏️ TTRG</div>
+            <a href="ttrg_2.html" class="view-btn">Apri Programma</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
